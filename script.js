@@ -25,14 +25,36 @@
             }
         }
         
-        // Smooth Scrolling
+        // --- Mobile Navigation ---
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const closeMobileMenu = document.querySelector('.close-mobile-menu');
+        const mobileNav = document.querySelector('.mobile-nav');
+        
+        if (mobileMenuBtn && closeMobileMenu && mobileNav) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileNav.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+            closeMobileMenu.addEventListener('click', () => {
+                mobileNav.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            });
+            document.querySelectorAll('.mobile-nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileNav.classList.remove('active');
+                    document.body.style.overflow = 'auto';
+                });
+            });
+        }
+        
+        // --- Smooth Scrolling ---
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
-                e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
+                    e.preventDefault();
                     window.scrollTo({
-                        top: target.offsetTop - 80,
+                        top: target.offsetTop - 70,
                         behavior: 'smooth'
                     });
                 }
