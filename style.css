@@ -255,6 +255,8 @@
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
             transform: perspective(1000px) rotateY(-5deg);
             transition: var(--transition);
+            width: 80%;
+            margin: 0 auto;
         }
 
         .about-image:hover {
@@ -606,8 +608,10 @@
 
         .social-links {
             display: flex;
-            gap: 15px;
-            margin-top: 20px;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+            margin: 15px auto 15px auto;
         }
 
         .social-links a {
@@ -655,6 +659,23 @@
         .contact-form textarea {
             min-height: 150px;
             resize: vertical;
+        }
+
+        .contact-form iframe {
+            width: 100%;
+            min-height: 460px;
+            border: none;
+            border-radius: 8px;
+            background: #fff;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+            margin: 0 auto;
+            display: block;
+        }
+
+        @media (max-width: 600px) {
+            .contact-form iframe {
+                min-height: 600px;
+            }
         }
 
         /* Footer */
