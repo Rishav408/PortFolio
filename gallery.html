@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Rishav Singh</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/pages/gallery.css">
+</head>
+<body data-page="gallery">
+    <div class="noise"></div>
+    <header class="site-header">
+        <div class="shell site-header__inner">
+            <a class="brand" href="index.html">
+                <span class="brand__mark">RAS</span>
+                <div class="brand__text">
+                    <span class="brand__name">Rishav Singh</span>
+                    <span class="brand__tagline">ML • AI • Developer</span>
+                </div>
+            </a>
+            <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="site-nav" data-nav data-open="false">
+                <ul>
+                    <li><a href="index.html" data-nav-link data-target="home">Home</a></li>
+                    <li><a href="projects.html" data-nav-link data-target="projects">Projects</a></li>
+                    <li><a href="gallery.html" data-nav-link data-target="gallery">Gallery</a></li>
+                    <li><a href="skills.html" data-nav-link data-target="skills">Skills</a></li>
+                    <li><a href="certificates.html" data-nav-link data-target="certificates">Certificates</a></li>
+                    <li><a href="blog.html" data-nav-link data-target="blog">Blog</a></li>
+                    <li><a href="resume.html" data-nav-link data-target="resume">Resume</a></li>
+                    <li><a href="about.html" data-nav-link data-target="about">About Me</a></li>
+                    <li><a href="contact.html" data-nav-link data-target="contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page">
+        <section class="page-header shell">
+            <p class="eyebrow">Gallery</p>
+            <h1>Frames from the journey</h1>
+            <p>Snapshots from labs, hackathons, and moments that remind me why I build human-centered AI.</p>
+        </section>
+
+        <section class="page-section shell">
+            <div class="gallery-grid">
+                <article class="gallery-card">
+                    <img src="assets/images/RAS.jpg" alt="Portrait of Rishav Singh">
+                    <div class="gallery-card__body">
+                        <h3>Studio portrait</h3>
+                        <p>Documenting the MIT-WPU chapter and the obsession with ethical AI.</p>
+                    </div>
+                </article>
+                <article class="gallery-card">
+                    <img src="assets/images/LG.jpg" alt="RAS logomark">
+                    <div class="gallery-card__body">
+                        <h3>RAS logotype</h3>
+                        <p>The monogram that shows up on every deck, prototype, and notebook.</p>
+                    </div>
+                </article>
+                <article class="gallery-card">
+                    <img src="assets/images/fairmind_ai.jpeg" alt="FairMind AI mockup">
+                    <div class="gallery-card__body">
+                        <h3>FairMind-AI storyboard</h3>
+                        <p>Rapid prototypes that tested how bias surfaced in real meetings.</p>
+                    </div>
+                </article>
+                <article class="gallery-card">
+                    <img src="assets/images/resolve_ai.jpeg" alt="Resolve AI mockup">
+                    <div class="gallery-card__body">
+                        <h3>ResolvAI dashboard</h3>
+                        <p>Offline-first UI used by small business owners during field tests.</p>
+                    </div>
+                </article>
+                <article class="gallery-card">
+                    <img src="assets/images/godfather_ai.jpeg" alt="Godfather AI preview">
+                    <div class="gallery-card__body">
+                        <h3>Character prompt crafting</h3>
+                        <p>Prompt notebooks used to fine-tune tone and cadence for the Godfather bot.</p>
+                    </div>
+                </article>
+                <article class="gallery-card">
+                    <img src="assets/images/resolve_ai.jpeg" alt="Hackathon session">
+                    <div class="gallery-card__body">
+                        <h3>Hackathon nights</h3>
+                        <p>Shipping MVPs with teammates, lots of chai, and even more whiteboards.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="shell site-footer__inner">
+            <p>© <span data-year>2025</span> Rishav Singh — Built with React</p>
+            <div class="footer-links">
+                <a href="https://github.com/Rishav408" target="_blank" rel="noopener" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/rishavsingh408/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://x.com/RishavSingh408" target="_blank" rel="noopener" aria-label="X">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/rsinghm85/" target="_blank" rel="noopener" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/pages/gallery.js"></script>
+</body>
+</html>
+

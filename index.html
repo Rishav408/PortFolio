@@ -3,452 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rishav Singh | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-
+    <title>Rishav Singh | ML • AI • Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/pages/home.css">
 </head>
-<body>
-    <!-- Header & Navigation -->
-    <header>
-        <div class="container">
-            <nav class="navbar">
-                <div class="logo">
-                    <img src="LG.jpg" alt="Logo Image" style="height: 1em; vertical-align: middle;">
-                    RAS
+<body data-page="home">
+    <div class="noise"></div>
+    <header class="site-header">
+        <div class="shell site-header__inner">
+            <a class="brand" href="index.html">
+                <span class="brand__mark">RAS</span>
+                <div class="brand__text">
+                    <span class="brand__name">Rishav Singh</span>
+                    <span class="brand__tagline">ML • AI • Developer</span>
                 </div>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#achievements">Achievements</a></li>
-                    <li><a href="#contact">Contact</a></li>
+            </a>
+            <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="site-nav" data-nav data-open="false">
+                <ul>
+                    <li><a href="index.html" data-nav-link data-target="home">Home</a></li>
+                    <li><a href="projects.html" data-nav-link data-target="projects">Projects</a></li>
+                    <li><a href="gallery.html" data-nav-link data-target="gallery">Gallery</a></li>
+                    <li><a href="skills.html" data-nav-link data-target="skills">Skills</a></li>
+                    <li><a href="certificates.html" data-nav-link data-target="certificates">Certificates</a></li>
+                    <li><a href="blog.html" data-nav-link data-target="blog">Blog</a></li>
+                    <li><a href="resume.html" data-nav-link data-target="resume">Resume</a></li>
+                    <li><a href="about.html" data-nav-link data-target="about">About Me</a></li>
+                    <li><a href="contact.html" data-nav-link data-target="contact">Contact</a></li>
                 </ul>
-                <button class="mobile-menu-btn">
-                    <i class="fas fa-bars"></i>
-                </button>
             </nav>
         </div>
     </header>
-    <!-- Mobile Navigation -->
-    <div class="mobile-nav">
-        <button class="close-mobile-menu">
-            <i class="fas fa-times"></i>
-        </button>
-        <ul class="mobile-nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#achievements">Achievements</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
 
-    <!-- Hero Section -->
-    <section id="home">
-        <div class="particles" id="particles"></div>
-        <div class="container">
-            <div class="hero-content animate-in">
-                <h1 class="hero-title">Hi, I'm <span style="color: var(--accent-blue);">Rishav Singh</span></h1>
-                <h2 class="hero-subtitle">Aspiring AI Engineer</h2>
-                <p class="hero-description">I'm passionate about building ethical, impactful AI solutions that solve real-world problems. My expertise lies in software development and artificial intelligence, with hands-on experience in creating offline AI assistants, bias detection systems, and conversational chatbots.</p>
-                <div class="hero-btns">
-                    <a href="Rishav Singh Resume.pdf" class="btn btn-primary">Download Resume</a>
-                    <a href="#projects" class="btn">View Projects</a>
+    <main class="page">
+        <section class="home-hero shell">
+            <div class="home-hero__visual">
+                <div class="avatar-orbit">
+                    <span class="avatar-orbit__ring"></span>
+                    <img src="assets/images/RAS.jpg" alt="Portrait of Rishav Singh">
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
-        <div class="container">
-            <h2 class="section-title animate-in">About Me</h2>
-            <div class="about-grid">
-                <div class="about-image animate-in">
-                    <img src="RAS.jpg" alt="Profile">
-                </div>
-                <div class="about-text animate-in">
-                    <h3>AI Engineer</h3>
-                    <p>I'm an aspiring AI engineer with a strong foundation in software development and a keen interest in artificial intelligence. My journey has been shaped by hands-on projects like building offline AI assistants for businesses, developing bias detection systems, and creating conversational AI chatbots.</p>
-                    <p>I enjoy working at the intersection of AI and real-world applications, leveraging technologies such as Python, Streamlit, and LangChain. My focus is on designing ethical, impactful AI solutions that address practical challenges and enhance user experiences.</p>
-                    <div class="info-grid">
-                        <div class="info-item">
-                            <i class="fas fa-graduation-cap"></i>
-                            <div>
-                                <h4>Education</h4>
-                                <p>B.Tech CSE @MIT-WPU</p>
-                            </div>
+            <div class="home-hero__content">
+                <p class="eyebrow">Hi, I’m</p>
+                <h1 class="home-hero__title">Rishav <span>Singh</span></h1>
+                <p class="home-hero__subtitle">Artificial Intelligence Engineer | Frontend Developer | Tech Explorer obsessed with ethical, production-ready ML systems.</p>
+                <ul class="chip-row">
+                    <li class="chip">AI Enthusiast</li>
+                    <li class="chip">Machine Learning Engineer</li>
+                    <li class="chip">Deep Learning Expert</li>
+                    <li class="chip">Computer Vision Researcher</li>
+                    <li class="chip">Developer</li>
+                </ul>
+                <div class="home-hero__cards">
+                    <article class="mini-card">
+                        <span class="mini-card__icon">📍</span>
+                        <div>
+                            <p class="label">Location</p>
+                            <h4>Pune, Maharashtra, India</h4>
                         </div>
-                        <div class="info-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h4>Location</h4>
-                                <p>Pune, India</p>
-                            </div>
+                    </article>
+                    <article class="mini-card">
+                        <span class="mini-card__icon">💼</span>
+                        <div>
+                            <p class="label">Expertise</p>
+                            <h4>AI/ML, Problem Solving</h4>
                         </div>
-                        <div class="info-item">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>Email</h4>
-                                <p>rishav4805@gmail.com</p>
-                            </div>
+                    </article>
+                    <article class="mini-card">
+                        <span class="mini-card__icon">📧</span>
+                        <div>
+                            <p class="label">Contact</p>
+                            <h4>rishav4805@gmail.com</h4>
                         </div>
-                        <div class="info-item">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <h4>Phone</h4>
-                                <p>+91 8320061928</p>
-                            </div>
-                        </div>
-                    </div>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <div class="container">
-            <h2 class="section-title animate-in">Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card animate-in">
-                    <div class="project-img">
-                        <img src="resolve_ai.jpeg" alt="Project">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">ResolvAI</h3>
-                        <p>Offline AI assistant for small businesses to generate policy-compliant customer responses using local LLMs with Streamlit interface.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">streamlit</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#"><i class="fab fa-github"></i> Code</a>
-                            <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="project-card animate-in">
-                    <div class="project-img">
-                        <img src="fairmind_ai.jpeg" alt="Project">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">FairMind-AI</h3>
-                        <p>The Subconscious Bias Detection AI identifies and mitigates implicit biases in real-time decision-making by analyzing verbal, non-verbal, and contextual data.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">HTML & CSS</span>
-                            <span class="tech-tag">Node.js</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#"><i class="fab fa-github"></i> Code</a>
-                            <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="project-card animate-in">
-                    <div class="project-img">
-                        <img src="godfather_ai.jpeg" alt="Project">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">The Godfather AI Chatbot</h3>
-                        <p>An AI chatbot that embodies Vito Corleone from Francis Ford Coppola's The Godfather, replicating Marlon Brando's iconic performance with authentic dialogue patterns, Sicilian wisdom, and mafia undertones.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">LangChain</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/Rishav408/GodFather-AI-ChatBot"><i class="fab fa-github"></i> Code</a>
-                            <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                        </div>
-                    </div>
+        <section class="home-links shell">
+            <div class="home-links__group">
+                <p class="label">Connect with me</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/rishavsingh408/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:rishav4805@gmail.com" aria-label="Email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                    <a href="https://www.instagram.com/rsinghm85/" target="_blank" rel="noopener" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/rishavsingh" target="_blank" rel="noopener" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills">
-        <div class="container">
-            <h2 class="section-title animate-in">Skills</h2>
-            <div class="skills-container">
-                <div class="skill-category animate-in">
-                    <h3>Languages & Frameworks</h3>
-                    <ul class="skills-list">
-                        <li>
-                            <i class="fab fa-python"></i> Python
-                        </li>
-                        <li>
-                            C
-                        </li>
-                        <li>
-                            <i class="fab fa-html5"></i> HTML
-                        </li>
-                        <li>
-                            <i class="fab fa-node-js"></i> Node.js
-                        </li>
-                        <li>
-                            <i class="fab fa-css3-alt"></i> CSS
-                        </li>
-                        <li>
-                            <i class="fab fa-react"></i> React.js
-                        </li>
-                    </ul>
-                </div>
-                <div class="skill-category animate-in">
-                    <h3>Tools & Technologies</h3>
-                    <ul class="skills-list">
-                        <li>
-                            <i class="fas fa-database"></i> MongoDB
-                        </li>
-                        <li>
-                            <i class="fab fa-git-alt"></i> Git & GitHub
-                        </li>
-                        <li>
-                            <i class="fas fa-cloud"></i> AWS
-                        </li>
-                        <li>
-                            <i class="fas fa-robot"></i> LangChain
-                        </li>
-                        <li>
-                            <i class="fas fa-stream"></i> Streamlit
-                        </li>
-                    </ul>
-                </div>
-                <div class="skill-category animate-in">
-                    <h3>Professional Skills</h3>
-                    <ul class="skills-list">
-                        <li>
-                            <i class="fas fa-lightbulb"></i> Problem Solving
-                        </li>
-                        <li>
-                            <i class="fas fa-users"></i> Team Collaboration
-                        </li>
-                        <li>
-                            <i class="fas fa-tasks"></i> Project Management
-                        </li>
-                        <li>
-                            <i class="fas fa-comments"></i> Communication
-                        </li>
-                        <li>
-                            <i class="fas fa-brain"></i> Critical Thinking
-                        </li>
-                    </ul>
-                </div>
-                <div class="skill-category animate-in">
-                    <h3>Passions & Expertise</h3>
-                    <ul class="skills-list">
-                        <li>
-                            <i class="fas fa-globe"></i> Geopolitics Analysis
-                        </li>
-                        <li>
-                            <i class="fas fa-book-reader"></i> International Relations
-                        </li>
-                        <li>
-                            <i class="fas fa-landmark"></i> Policy Research
-                        </li>
-                        <li>
-                            <i class="fas fa-comments"></i> Geopolitical Commentary
-                        </li>
-                    </ul>
+            <div class="home-links__group">
+                <p class="label">See what I’m doing</p>
+                <div class="social-icons">
+                    <a href="https://github.com/Rishav408" target="_blank" rel="noopener" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://leetcode.com/u/Rishav408/" target="_blank" rel="noopener" aria-label="LeetCode">
+                        <i class="fa-solid fa-code"></i>
+                    </a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Experience Section
-    <section id="experience">
-        <div class="container">
-            <h2 class="section-title animate-in">Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item animate-in">
-                    <div class="timeline-content">
-                        <div class="timeline-date">June 2023 - Present</div>
-                        <h3 class="timeline-title">Senior Developer</h3>
-                        <h4>Quantum Innovations</h4>
-                        <p class="timeline-desc">Leading development of AI-powered SaaS products, managing a team of 5 developers, and implementing agile methodologies.</p>
-                        <ul>
-                            <li>Reduced system latency by 40% through architectural optimization</li>
-                            <li>Implemented CI/CD pipeline reducing deployment time by 70%</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="timeline-item animate-in">
-                    <div class="timeline-content">
-                        <div class="timeline-date">Jan 2022 - May 2023</div>
-                        <h3 class="timeline-title">Full Stack Developer</h3>
-                        <h4>NexTech Solutions</h4>
-                        <p class="timeline-desc">Developed and maintained web applications using React, Node.js, and MongoDB stack.</p>
-                        <ul>
-                            <li>Created a real-time analytics dashboard used by 10,000+ monthly users</li>
-                            <li>Integrated machine learning models for predictive analytics features</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="timeline-item animate-in">
-                    <div class="timeline-content">
-                        <div class="timeline-date">Aug 2020 - Dec 2021</div>
-                        <h3 class="timeline-title">Frontend Developer</h3>
-                        <h4>Digital Creations</h4>
-                        <p class="timeline-desc">Built responsive user interfaces for various client projects with a focus on UX and performance.</p>
-                        <ul>
-                            <li>Improved page load times by 60% through optimization techniques</li>
-                            <li>Created component library used across 15+ projects</li>
-                        </ul>
-                    </div>
-                </div>
+        <section class="page-section shell">
+            <div class="section-heading">
+                <p class="eyebrow">Focus Areas</p>
+                <h2>Building grounded AI experiences</h2>
+                <p>From offline assistants for small businesses to bias-aware models, I ground every build in ethics, performance, and usability.</p>
             </div>
-        </div>
-    </section> -->
-
-    <!-- Education Section -->
-    <section id="education">
-        <div class="container">
-            <h2 class="section-title animate-in">Education</h2>
-            <div class="timeline">
-                <div class="timeline-item animate-in">
-                    <div class="timeline-content">
-                        <div class="timeline-date">2023 - 2027</div>
-                        <h3 class="timeline-title">B.Tech in Computer Science</h3>
-                        <h4>MIT-WPU, Pune</h4>
-                        <p>B Tech in CSE Specialized in AI and Data Science.</p>
-                        <p>CGPA: 8.23/10</p>
-                    </div>
-                </div>
-                
-                <div class="timeline-item animate-in">
-                    <div class="timeline-content">
-                        <div class="timeline-date">2011 - 2023</div>
-                        <h3 class="timeline-title">Higher Secondary</h3>
-                        <h4>Shree Swaminarayan English Medium School</h4>
-                        <p>Physics, Chemistry, Mathematics with Computer Science</p>
-                        <p>Percentage 10th: 79%</p>
-                        <p>Percentage 12th: 65%</p>
-                    </div>
-                </div>
+            <div class="card-grid">
+                <article class="gradient-card">
+                    <p class="label">ResolvAI</p>
+                    <h3>Offline policy-aligned AI assistants</h3>
+                    <p>Helps SMBs respond to customers using on-device LLMs, ensuring compliance without shipping data to the cloud.</p>
+                </article>
+                <article class="gradient-card">
+                    <p class="label">FairMind-AI</p>
+                    <h3>Subconscious bias detection</h3>
+                    <p>Analyzes verbal + contextual signals to surface hidden bias and keep decision-making transparent.</p>
+                </article>
+                <article class="gradient-card">
+                    <p class="label">The Godfather AI</p>
+                    <h3>Character-consistent conversational AI</h3>
+                    <p>Replicates Vito Corleone’s cadence and tone using custom LangChain pipelines and memory-aware prompts.</p>
+                </article>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Achievements Section -->
-    <section id="achievements">
-        <div class="container">
-            <h2 class="section-title animate-in">Achievements</h2>
-            <div class="achievements-grid">
-                <div class="achievement-card animate-in">
-                    <div class="achievement-icon">
-                        <i class="fas fa-trophy"></i>
-                    </div>
-                    <h3 class="achievement-title">Critical Thinking & Problem Solving</h3>
-                    <p>A course of study offered by RITx, an online learning initiative of Rochester Institute of Technology.</p>
-                </div>
-                
-                <div class="achievement-card animate-in">
-                    <div class="achievement-icon">
-                        <i class="fas fa-medal"></i>
-                    </div>
-                    <h3 class="achievement-title">Teamwork & Collaboration</h3>
-                    <p>A course of study offered by RITx, an online learning initiative of Rochester Institute of Technology.</p>
-                </div>
-                
-                <div class="achievement-card animate-in">
-                    <div class="achievement-icon">
-                        <i class="fas fa-certificate"></i>
-                    </div>
-                    <h3 class="achievement-title">AWS Certified</h3>
-                    <p>AWS Certified Solutions Architect with specialization in serverless architectures.</p>
-                </div>
-                
-                <div class="achievement-card animate-in">
-                    <div class="achievement-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <h3 class="achievement-title">Open Source Contributor</h3>
-                    <p>Contributed to major open source projects including React and TensorFlow.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <h2 class="section-title animate-in">Contact</h2>
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <div class="contact-item animate-in">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h3>Email</h3>
-                            <p>rishav4805@gmail.com</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item animate-in">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h3>Phone</h3>
-                            <p>+91 8320061928</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item animate-in">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h3>Location</h3>
-                            <p>Pune, Maharashtra, India</p>
-                        </div>
-                    </div>
-                    
-                    <div class="social-links animate-in">
-                        <a href="https://github.com/Rishav408"><i class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/rishavsingh408/"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://x.com/RishavSingh408"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.instagram.com/rsinghm85/"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-                
-                    <div class="contact-form animate-in">
-                        <iframe src="https://forms.gle/QWvPzJYcVVmWAmsV8" allowfullscreen></iframe>
-                    </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">RAS</div>
-                <p>Building the future, one line of code at a time</p>
-                <div class="social-links">
-                    <a href="https://github.com/Rishav408"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/rishavsingh408/"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://x.com/RishavSingh408"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/rsinghm85/"><i class="fab fa-instagram"></i></a>
-                </div>
-                <p class="copyright">© 2023 Rishav Singh. All rights reserved.</p>
+    <footer class="site-footer">
+        <div class="shell site-footer__inner">
+            <p>© <span data-year>2025</span> Rishav Singh — Built with React</p>
+            <div class="footer-links">
+                <a href="https://github.com/Rishav408" target="_blank" rel="noopener" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/rishavsingh408/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://x.com/RishavSingh408" target="_blank" rel="noopener" aria-label="X">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/rsinghm85/" target="_blank" rel="noopener" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
             </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
-
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/pages/home.js"></script>
 </body>
 </html>
+
