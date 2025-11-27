@@ -1,1 +1,172 @@
-﻿/* Page-specific tweaks for About */
+﻿/* About page */
+.about-page {
+    padding-top: 4rem;
+}
+
+.about-hero {
+    margin-bottom: 3rem;
+}
+
+.about-hero__card {
+    position: relative;
+    background: rgba(10, 13, 28, 0.6);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 32px;
+    padding: clamp(2.5rem, 5vw, 4rem);
+    box-shadow:
+        0 40px 80px -20px rgba(0, 0, 0, 0.5),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+    overflow: hidden;
+}
+
+.about-hero__card::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at 50% 50%, rgba(76, 201, 240, 0.08), transparent 60%);
+    pointer-events: none;
+    z-index: -1;
+}
+
+.about-hero__card h1 {
+    font-family: var(--font-display);
+    color: var(--headline);
+    font-size: clamp(2.2rem, 4.5vw, 3.8rem);
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.02em;
+    background: linear-gradient(135deg, #fff 30%, #94a3b8 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-hero__card .lead {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: var(--body);
+    max-width: 65ch;
+    margin-bottom: 1.5rem;
+}
+
+.about-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 2.5rem 0 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding-top: 2rem;
+}
+
+.about-meta li {
+    flex: 1;
+    min-width: 200px;
+}
+
+.about-meta .label {
+    display: block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+}
+
+.about-meta strong {
+    display: block;
+    color: var(--headline);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* Education Section */
+.education {
+    margin-bottom: 6rem;
+}
+
+.education-grid {
+    display: grid;
+    gap: 2rem;
+}
+
+.education-card {
+    position: relative;
+    background: linear-gradient(180deg, rgba(15, 20, 40, 0.7) 0%, rgba(10, 13, 28, 0.9) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 24px;
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.education-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    border-color: rgba(76, 201, 240, 0.2);
+}
+
+.education-card__header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.education-card__header h3 {
+    margin: 0;
+    color: var(--headline);
+    font-size: 1.4rem;
+    font-family: var(--font-display);
+    flex: 1;
+    min-width: 280px;
+}
+
+.education-card__badge {
+    border-radius: 999px;
+    padding: 0.4rem 1rem;
+    background: rgba(76, 201, 240, 0.1);
+    border: 1px solid rgba(76, 201, 240, 0.2);
+    color: var(--accent);
+    font-size: 0.8rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.education-card__school {
+    margin: 0 0 1.25rem;
+    color: var(--headline);
+    font-weight: 500;
+    font-size: 1.05rem;
+    opacity: 0.9;
+}
+
+.education-card__story {
+    margin: 0;
+    color: var(--muted);
+    font-size: 1rem;
+    line-height: 1.7;
+    max-width: 70ch;
+}
+
+.education-card__story strong {
+    color: var(--headline);
+    font-weight: 600;
+}
+
+@media (max-width: 640px) {
+    .about-hero__card {
+        padding: 1.75rem;
+    }
+
+    .education-card__header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

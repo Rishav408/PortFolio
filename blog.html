@@ -43,32 +43,38 @@
         </div>
     </header>
 
-    <main class="page">
-        <section class="page-header shell">
+    <main class="page blog-page">
+        <section class="blog-hero shell">
             <p class="eyebrow">Blog & Notes</p>
             <h1>Documenting the build process</h1>
             <p>Writing helps me slow down, question assumptions, and share what I learn with the community.</p>
         </section>
 
-        <section class="page-section shell">
-            <div class="card-grid blog-grid">
+        <section class="blog-feed shell">
+            <div class="blog-feed__grid">
                 <article class="blog-card">
-                    <p class="label">AI Ethics</p>
+                    <span class="blog-card__tag">AI Ethics</span>
                     <h3>Why every AI project needs a bias playbook</h3>
                     <p>A framework I use to anticipate bias, design counter-measures, and keep teams accountable before launch day.</p>
-                    <a class="text-link" href="#">Read draft <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a class="blog-card__link" href="#">
+                        <span>Read draft</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                    </a>
                 </article>
                 <article class="blog-card">
-                    <p class="label">Engineering</p>
+                    <span class="blog-card__tag">Engineering</span>
                     <h3>Designing offline-first AI assistants</h3>
                     <p>What I learned while building ResolvAI for small businesses with spotty connectivity.</p>
-                    <a class="text-link" href="#">Read draft <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a class="blog-card__link" href="#">
+                        <span>Read draft</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                    </a>
                 </article>
-                <article class="blog-card">
-                    <p class="label">Learning Log</p>
+                <article class="blog-card is-muted">
+                    <span class="blog-card__tag">Learning Log</span>
                     <h3>From Geopolitics to Machine Learning</h3>
                     <p>How my fascination with international relations fuels research questions in AI and policy tech.</p>
-                    <a class="text-link" href="#">Coming soon</a>
+                    <span class="blog-card__status">Coming soon</span>
                 </article>
             </div>
         </section>
